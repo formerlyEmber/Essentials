@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: test_sphere.ma
-//Last modified: Tue, Aug 25, 2026 04:20:44 PM
+//Last modified: Thu, Aug 27, 2026 02:03:27 PM
 //Codeset: 1252
 requires maya "2027";
 requires "mtoa" "5.6.2";
@@ -11,19 +11,19 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "9FBBDA0D-4235-3650-0E94-819457A1710F";
+fileInfo "UUID" "F7C72C0E-46CF-404E-7FC8-B2858DB7F99E";
 createNode transform -s -n "persp";
 	rename -uid "5B23BD01-47F5-6BEE-E79E-EBACC0DCCCEE";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -32.069675391297572 9.3294223968336656 12.625831851412567 ;
-	setAttr ".r" -type "double3" -6.4643896827574245 -80.200000000001566 -4.671529346258042e-15 ;
+	setAttr ".t" -type "double3" -22.985049448599501 3.4865004547278531 11.922645468495752 ;
+	setAttr ".r" -type "double3" 2.5356103172426021 -78.60000000000349 0 ;
 	setAttr ".rp" -type "double3" 4.3955721536528445e-16 1.902598633068695e-15 -1.4210854715202004e-14 ;
 	setAttr ".rpt" -type "double3" 8.025368859009062e-15 -6.4242009584163858e-15 1.06327961632825e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A40595D6-4BA0-E653-2E6A-6497921C5EBA";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 39.876194234684448;
+	setAttr ".coi" 30.592779903153048;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -147,7 +147,7 @@ createNode mesh -n "pSphereShape3" -p "pSphere3";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "1A5D0AB3-4E1D-3F09-9F30-BA883DC2D024";
+	rename -uid "51DDE4B0-449E-B80A-435D-7EA088DA2832";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode UsdDefaultSettings -n "UsdDefaultRenderSettings";
@@ -157,16 +157,16 @@ createNode UsdDefaultSettings -n "UsdDefaultRenderSettings";
 	setAttr ".asp" -type "string" "UsdDefaultRenderSettings,/Render/SceneRenderSettings";
 lockNode -l 1 ;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "5CC14537-4322-19FD-3CAE-43B78BB91218";
+	rename -uid "6524E914-413C-3138-D929-9F9133D5F444";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "7A4BFAC0-4997-4B94-C8FB-36B77D43423F";
+	rename -uid "B9843F97-4DF9-4DC3-EFAC-738DDE1E706D";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "7572ECAA-44E3-2A31-226E-92951DCCB3F2";
+	rename -uid "6C5BD430-4DE9-C87A-6F30-02B585F4C0D6";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "6ABD8994-4ED4-CAA1-3796-1B935278CCFA";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "D0A5E701-49A2-48A5-5D9C-1B8D6B9EFB18";
+	rename -uid "5FFE2DE7-4490-6900-80C1-7DA08F54681E";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "1DF6F4A6-4259-75EC-2D20-8D99B95A18C8";
 	setAttr ".g" yes;
@@ -278,8 +278,8 @@ createNode animCurveTL -n "pSphere2_translateY";
 	rename -uid "14BF031A-4C74-DAD0-F554-8A8B69419E28";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 6 8 0 9 0.7 10 0.9 11 1.1 12 -0.13947338527538689
-		 13 -0.35143658035562897;
+	setAttr -s 7 ".ktv[0:6]"  1 6 8 -0.19071668065493252 9 0.7 10 0.9
+		 11 1.1 12 -0.13947338527538689 13 -0.35143658035562897;
 createNode animCurveTL -n "pSphere2_translateZ";
 	rename -uid "A6DE5DD8-4896-68A5-BFC7-7691BD47691C";
 	setAttr ".tan" 18;
@@ -294,12 +294,14 @@ createNode animCurveTU -n "pSphere2_scaleY";
 	rename -uid "3B0AE340-4651-FB2E-D775-9DA3A8AF0B54";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 10 1 11 0.65 12 0.9 13 0.65;
+	setAttr -s 7 ".ktv[0:6]"  1 1 7 1 8 0.77801018743838746 10 1 11 0.65
+		 12 0.9 13 0.65;
 createNode animCurveTU -n "pSphere2_scaleZ";
 	rename -uid "F7158DBD-44A9-9F76-2D2B-97BC0676F5AE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  1 1 10 1 11 1.3 12 1.1 13 1.3;
+	setAttr -s 7 ".ktv[0:6]"  1 1 7 1 8 1.10120956649822 10 1 11 1.3 12 1.1
+		 13 1.3;
 createNode animCurveTL -n "pSphere3_translateX";
 	rename -uid "01268423-4CFA-15A3-AAAA-799ADFDA910C";
 	setAttr ".tan" 18;
@@ -331,8 +333,8 @@ createNode animCurveTL -n "pSphere3_translateY";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 12 11 2.1352366641622833 17 8;
 select -ne :time1;
-	setAttr ".o" 17;
-	setAttr ".unw" 17;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
