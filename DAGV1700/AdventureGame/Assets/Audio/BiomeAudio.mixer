@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!243 &-5232163564821909867
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AutumnBiome
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 3292f5661bb7a0041bcda144b1ee6088
+  m_Children: []
+  m_Volume: ca45f67bb852e0244a70118929ea2f94
+  m_Pitch: c87eb17df3f42d6489a2a024f1883715
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 8381937456816008689}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &-3710873224018876955
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FallingMusic
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 62c31c78115e4694f943fc9bd0a8ae0c
+  m_Children: []
+  m_Volume: fe87f4db88dd2bc46be40f12b68ec0eb
+  m_Pitch: e180997d1c752b341aa642abcb36daec
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -2748254310877657917}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &-2748254310877657917
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 8f2e36cda1a910041bdb00c11778aaec
+  m_EffectName: Attenuation
+  m_MixLevel: 83885ae54e997b74db9412a69ea6c9f3
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BiomeAudio
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 1600529952648929173}
+  - {fileID: 9186658922514098382}
+  - {fileID: 3823047855852281149}
+  m_StartSnapshot: {fileID: 1600529952648929173}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 5bd172b729405be46bdc2869fd33144a
+    - a96a46abc78969a4fa161f4d3ab4bace
+    - 62c31c78115e4694f943fc9bd0a8ae0c
+    - 3292f5661bb7a0041bcda144b1ee6088
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 3823047855852281149}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 5bd172b729405be46bdc2869fd33144a
+  m_Children:
+  - {fileID: 8066476797839383555}
+  - {fileID: -3710873224018876955}
+  - {fileID: -5232163564821909867}
+  m_Volume: 749c9ad01a5538f48b6531cd1d2b312c
+  m_Pitch: c0528eca8159bb24bbd0d833636591ea
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 86e8a2fbd53e77948bd9274235fed14b
+  m_EffectName: Attenuation
+  m_MixLevel: 6f90e785c80c9e24aba56cbc14687429
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &1600529952648929173
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GrassBiomeSnapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: ba0de08fb5f51324a92084062456385e
+  m_FloatValues:
+    749c9ad01a5538f48b6531cd1d2b312c: 0
+    5df415b324079cd459b4b28c19369ecf: -7.436936
+    ca45f67bb852e0244a70118929ea2f94: -80
+    fe87f4db88dd2bc46be40f12b68ec0eb: -80
+  m_TransitionOverrides: {}
+--- !u!245 &3823047855852281149
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AutumnBiomeSnapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 4eeff7b97dbc20f41a4151f9c0e85c1c
+  m_FloatValues:
+    5df415b324079cd459b4b28c19369ecf: -80
+    ca45f67bb852e0244a70118929ea2f94: -7.228506
+    fe87f4db88dd2bc46be40f12b68ec0eb: -80
+  m_TransitionOverrides: {}
+--- !u!244 &6508691535739865962
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: c45921bf32c270c4487ad5c09c13ff1f
+  m_EffectName: Attenuation
+  m_MixLevel: 838e0aa023373414ba3c86ccccd0fe82
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &8066476797839383555
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GrassBiome
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: a96a46abc78969a4fa161f4d3ab4bace
+  m_Children: []
+  m_Volume: 5df415b324079cd459b4b28c19369ecf
+  m_Pitch: dc8c7bef72b1dfd42a8e28bca1aa7409
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 6508691535739865962}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &8381937456816008689
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: fc4b2aa0fc3a4f14eac7b18012721e4b
+  m_EffectName: Attenuation
+  m_MixLevel: c430a7c6e5db4664cad2a4483b282806
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &9186658922514098382
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FallingMusicSnapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 9760d95b9d59c7e4da30735763d721fd
+  m_FloatValues:
+    5df415b324079cd459b4b28c19369ecf: -80
+    ca45f67bb852e0244a70118929ea2f94: -80
+    fe87f4db88dd2bc46be40f12b68ec0eb: -7.228506
+  m_TransitionOverrides: {}
